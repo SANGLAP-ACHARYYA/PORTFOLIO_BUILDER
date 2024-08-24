@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Portfolio Builder</h1>
+  </header>
+
+  <!-- Form to build the portfolio -->
+  <section id="builder-form">
+    <h2>Create Your Portfolio</h2>
+    <form id="portfolio-form">
+        <!-- Other input fields -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+        <label for="bio">Your Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself" required></textarea>
+      
+        <!-- Project Section -->
+        <div id="project-section">
+          <label for="project-title-0">Project Title:</label>
+          <input type="text" id="project-title-0" name="project-title-0" placeholder="Project title" required>
+      
+          <label for="project-desc-0">Project Description:</label>
+          <textarea id="project-desc-0" name="project-desc-0" placeholder="Describe your project" required></textarea>
+        </div>
+      
+        <button type="button" id="add-project">Add Another Project</button>
+      
+        <!-- Style Selection -->
+        <label for="style-choice">Choose a Style:</label>
+        <select id="style-choice">
+          <option value="default-style">Default</option>
+          <option value="modern-style">Modern</option>
+          <option value="classic-style">Classic</option>
+        </select>
+      
+        <button type="submit">Generate Portfolio</button>
+      </form>
+      
+
+  <!-- Portfolio Preview -->
+  <section id="portfolio-preview">
+    <h2>Preview Your Portfolio</h2>
+    <div id="generated-portfolio" class="default-style">
+      <!-- Dynamically generated content will appear here -->
+    </div>
+    <button id="download-portfolio" type="button">Download Portfolio</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
